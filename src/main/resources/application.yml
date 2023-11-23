@@ -1,0 +1,25 @@
+#
+#server:
+#  port=8086:
+#
+#logging:
+#  level:
+#    org.springframework.security: trace
+#
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        client-1:
+#          registration:
+#            provider: spring
+#            issuer-uri: "http://localhost:8080"
+#            client-id: "api-client"
+#            client-secret: "secret"
+#            authorization-grant-type: "authorization_code"
+#            client-authentication-method: "client_secret_basic"
+#            redirect-uris: "http://localhost:8080/login/oauth2/code/spring"
+#            scopes: "user.read, user.write, open_id"
+#            token:
+#             access-token-time-to-live: 2800s
+#
